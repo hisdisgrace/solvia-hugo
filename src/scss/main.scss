@@ -3,11 +3,12 @@
 @import "reset";
 @import "grids";
 @import "colors";
-//@import "lines";
-//@import "svgs";
-//@import "font-awesome";
-//@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600';
-//$font-openSans: 'Open Sans', sans-serif;
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700');
+$font-arimo: 'Arimo', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700');
+$font-cinzel: 'Cinzel Decorative', cursive;
 
 $ani-duration: 0.6s;
 $ani-delay: 0.5s;
@@ -28,30 +29,25 @@ $gutter_quater: $gutter * 0.25;
     
 // Custom Layout End
 
-html,body{ 
-	width:100%;
-	height:100%;
-	background:#ddd;
-}
-
 html {
     font-size: 62.5%;
 }
 
 body {
-    line-height: 2.2rem;
-    font-size: 1.8rem;
-    //font-family: $font-openSans;
-    ///color: $grey-dark;
-    //padding: 30px 0;
-    background-color: $white;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    font-family: $font-arimo;
+    color: $text-normal;
+    background-color: #111;
     background-attachment: fixed;
-    //background-image: $background_image;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23000000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 h1, h2, h3, h4, h5, h6{
   font-weight: 300;
+  font-family:$font-cinzel;
   clear: both;
+  color:$text-bright;
 }
 
 h1 {
@@ -102,44 +98,48 @@ canvas{
   vertical-align:bottom;
 }
 
+.grid {}
 
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000000;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
+iframe{
+    height: 410px;
+    max-width: 700px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
-.grid {
-    width:100%;
-    pointer-events:none;
+footer{
+    background-color:$background;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.content{
+    margin-top:40px;
+    background-color:$background;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 10px;
+}
+
+a{
+    color:$text-normal;
+    text-decoration:none;
+    font-size:2.4rem;
+    padding: 10px;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+
+    &:hover{
+        background-color: #222;
+    }
+    &:visited{
+        color:$text-highlight;
+    }
 }
 
 svg{
     fill:#000;
     margin-top:20%;
-}
-
-/* ---- particles.js container ---- */
-
-#particles-js{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: #fff;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
