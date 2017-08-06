@@ -1,0 +1,29 @@
+{{ partial "head.html" . }}
+{{ partial "navigation.html" . }}
+
+<section class="grid">
+    <div class="player">
+        {{ partial "bandcamp.html"}}
+    </div>
+    <div class="content lyrics">
+        <div class="layout">
+            <h2>{{ .Title }}</h2>
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+    
+<aside class="grid">
+    <span class="previous">
+        {{ if .Prev }}
+        <a href="{{ .Prev.Permalink }}"> {{ .Prev.Title }} </a>
+        {{ end }}
+    </span>
+    <span class="next">
+        {{ if .Next }}
+        <a  href="{{ .Next.Permalink }}"> {{ .Next.Title }} </a>
+        {{ end }}
+    </span>
+</aside>
+
+{{ partial "footer.html" . }}

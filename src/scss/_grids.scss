@@ -3,11 +3,11 @@
 @import "mappy-breakpoints";
 @import "susy";
 
-$susy: ( 
- gutters: 0.25,
- container: 1080px,
- global-box-sizing: border-box,
- //debug: ( image: debug )    
+$susy: (
+  gutters: 0.25,
+  container: 1080px,
+  global-box-sizing: border-box,
+  debug: (image: debug)
 );
 
 // trying new breakpoints
@@ -19,10 +19,10 @@ $susy: (
 //);
 
 $breakpoints: ( 
- 'small': 320px,
- 'med': 600px,
- 'large': 900px,
- 'wide': 1200px
+ 'small': 440px,
+ 'med': 650px,
+ 'large': 820px,
+ 'wide': 1050px
 );
 
 .grid {
@@ -39,6 +39,6 @@ $breakpoints: (
  }
      
  @include mappy-bp(wide) {
-  @include container(12);
+  @include container(14);
  }
 }

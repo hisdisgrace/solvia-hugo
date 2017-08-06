@@ -1,0 +1,10 @@
+{{ partial "head.html" . }}
+{{ partial "navigation.html" . }}
+
+<section class="grid">
+    {{ range .Data.Pages }}
+    {{ .Render "li"}}
+    {{ end }}
+</section>
+
+{{ partial "footer.html" . }}
