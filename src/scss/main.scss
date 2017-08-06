@@ -18,6 +18,12 @@ $gutter: gutter();
 $gutter_half: $gutter * 0.5;
 $gutter_quater: $gutter * 0.25;
 
+@mixin card{
+    background-color: $background;
+    border: 1px solid rgba(255,255,255,0.15);
+    box-sizing: border-box;
+}
+
 // Custom Layout for different sections
 
 .player,
@@ -95,10 +101,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-weight: 300;
-  font-family:$font-cinzel;
   clear: both;
   color:$text-bright;
+}
+
+.lyrics-title{
+    font-weight: 300;
+    font-family:$font-cinzel;
 }
 
 h1 {
@@ -150,15 +159,29 @@ canvas{
 
 .grid {}
 
+.song-list{
+    @include card;
+}
+
 .content{
-     background-color:$background;
-     border: 1px solid rgba(255,255,255,0.15);
-     box-sizing: border-box;
+    @include card;
      
     .layout{
         padding: 10px;
 
         ul, p{padding: 15px 5px;}
+        ol{
+            padding: 20px 0 5px;
+            li{
+                a{
+                    width:90%;
+                    text-align: left;
+                    border-bottom: 1px solid rgba(255,255,255,0.15);  
+                }
+
+                &:first-child a{border-top: 1px solid rgba(255,255,255,0.15);}
+            }
+        }
     }
         
 }
@@ -171,10 +194,9 @@ canvas{
 }
 
 footer{
-    background-color:$background;
+    @include card;
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid rgba(255,255,255,0.15);
     display:flow-root;
 
     .layout{

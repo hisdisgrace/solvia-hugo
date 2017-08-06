@@ -2,9 +2,19 @@
 {{ partial "navigation.html" . }}
 
 <section class="grid">
-    {{ range .Data.Pages }}
-    {{ .Render "li"}}
-    {{ end }}
+    <div class="player">
+        {{ partial "bandcamp.html"}}
+    </div>
+    <div class="content">
+        <div class="layout">
+            <h2>Album list:</h2>
+            <ol class="lyrics-title">
+                {{ range .Data.Pages }}
+                {{ .Render "li"}}
+                {{ end }}
+            </ol>
+        </div>
+    </div>
 </section>
 
 {{ partial "footer.html" . }}
