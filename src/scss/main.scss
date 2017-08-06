@@ -172,15 +172,12 @@ canvas{
         ul, p{padding: 15px 5px;}
         ol{
             padding: 20px 0 5px;
-            li{
-                a{
+            li a{
                     width:90%;
                     text-align: left;
                     border-bottom: 1px solid rgba(255,255,255,0.15);  
                 }
-
-                &:first-child a{border-top: 1px solid rgba(255,255,255,0.15);}
-            }
+            li:first-child a{border-top: 1px solid rgba(255,255,255,0.15);}
         }
     }
         

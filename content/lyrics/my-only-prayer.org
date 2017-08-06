@@ -1,6 +1,6 @@
 #+TITLE: My Only Prayer
 #+DATE: 2017-08-06T03:22:02+02:00
-#+DRAFT: true
+#+DRAFT: false
 
 - Oumikami, who is the Sun, once said
 - In a language obscure unless you're dead
