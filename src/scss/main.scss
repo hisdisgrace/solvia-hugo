@@ -79,6 +79,7 @@ body {
     font-size: 1.4rem;
     font-family: $font-arimo;
     color: $text-normal;
+    min-width: 320px;
     background-color: #111;
     background-attachment: fixed;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23000000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
@@ -148,17 +149,19 @@ hr{
     border-left: none;
 }
 
+.content{
+    padding: 0 20px;
+    margin: 0 20px;
+    @include mappy-bp(large) {
+        padding: 0;
+        margin: 0;
+    }
+}
+
 .player,
 .content{
     margin-top: 30px;
     }
-
-.content{
-
-//    max-width:320px;
-    padding: 0 15px;
-    @include mappy-bp(large) { padding: 0; }
-}
     
 .player iframe{
     margin: 0 auto;
@@ -204,24 +207,23 @@ hr{
 footer{
     @include card;
     margin-top: 20px;
-    padding: 10px;
-    display:flow-root;
-
-    .layout{
+    padding: 10px 0;
+    .icons{
         max-width:1080px;
-        margin:0 auto;
-    }
-
-    a{
-        float:right;
-        display: inline-block;
+        margin: 0 auto;
+        display:flex;
+        justify-content: flex-end;
     }
 }
 
 a{
     color:$text-normal;
+
     text-decoration:none;
-    font-size:2.4rem;
+
+    @include mappy-bp(med) {
+        font-size:2.4rem;
+    }
     padding: 10px;
     min-width: 30px;
     display: inline-block;
@@ -243,17 +245,11 @@ svg{
 .flex{
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 20px;
 
     .previous, .next{
         background-color:$background;
-        
-        }
-
-    .previous{
-        padding-left: 30px;
     }
-    .next{
-
-    }
+            
+    .next{ margin-right:15px; }
 }

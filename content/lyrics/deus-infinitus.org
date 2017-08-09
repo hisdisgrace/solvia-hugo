@@ -1,5 +1,5 @@
 #+TITLE: Deua Infinitus
-#+DATE: 2017-08-09T12:22:23+02:00
+#+DATE: 2017-08-09T11:05:57+02:00
 #+DRAFT: false
 
 - Everyone must die someday
@@ -81,7 +81,7 @@
 <br>
 - THAT THERE
 - Are more stars in
--  THE SKY
+- THE SKY
 = Than grains of sand
 - ON EARTH
 - We are

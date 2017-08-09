@@ -1,5 +1,5 @@
 #+TITLE: Sedition
-#+DATE: 2017-08-09T12:41:11+02:00
+#+DATE: 2017-08-09T11:07:57+02:00
 #+DRAFT: false
 
 - “I have sworn, upon the Altar of God, Eternal hostility, against every form of Tyranny over the mind of man”
