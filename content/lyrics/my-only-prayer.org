@@ -1,5 +1,5 @@
 #+TITLE: My Only Prayer
-#+DATE: 2017-08-06T03:22:02+02:00
+#+DATE: 2017-08-06T03:20:02+02:00
 #+DRAFT: false
 
 - Oumikami, who is the Sun, once said
@@ -53,5 +53,7 @@
 - Forging timeless rivers
 - In (all) your eyes
 - I see fractal mirrors
+
+-----
 
 Written from a poem by my dear friend and wordsmith-extraordinaire, Etienne Fourie, My Only Prayer, captures a grand view of humanities purpose. Evolution is a painful process, riddled with suffering, death and extinction, but it is through the abrasion of our baser instincts that humanity edges forward. A web of consciousness that transcends any one of us - In all your eyes I see fractal mirrors.

@@ -20,27 +20,11 @@ $gutter_quater: $gutter * 0.25;
 
 @mixin card{
     background-color: $background;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid $border;
     box-sizing: border-box;
 }
 
 // Custom Layout for different sections
-
-.player,
-.content{
-    margin-top: 30px;
-    }
-
-.content{
-
-    max-width:320px;
-    margin: 30px  auto 0;
-}
-    
-.player iframe{
-    margin: 0 auto;
-    display:block;
-}
 
 @include mappy-bp(med) {
     .player,
@@ -157,8 +141,33 @@ canvas{
   vertical-align:bottom;
 }
 
+hr{
+    border-top: 1px solid #393939;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.player,
+.content{
+    margin-top: 30px;
+    }
+
+.content{
+
+//    max-width:320px;
+    padding: 0 15px;
+    @include mappy-bp(large) { padding: 0; }
+}
+    
+.player iframe{
+    margin: 0 auto;
+    display:block;
+}
+
 .grid {}
 
+    
 .song-list{
     @include card;
 }
@@ -182,6 +191,8 @@ canvas{
     }
         
 }
+
+.lyrics ul li {font-style: italic;}
 
 .headerImage{
     background:url(../img/SolviaBanner.jpg);
@@ -227,4 +238,22 @@ a{
 svg{
     fill:#000;
     margin-top:20%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+
+    .previous, .next{
+        background-color:$background;
+        
+        }
+
+    .previous{
+        padding-left: 30px;
+    }
+    .next{
+
+    }
 }

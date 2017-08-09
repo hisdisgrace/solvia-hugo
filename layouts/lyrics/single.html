@@ -13,17 +13,20 @@
     </div>
 </section>
     
-<aside class="grid">
-    <span class="previous">
-        {{ if .Prev }}
-        <a href="{{ .Prev.Permalink }}"> {{ .Prev.Title }} </a>
-        {{ end }}
-    </span>
-    <span class="next">
-        {{ if .Next }}
-        <a  href="{{ .Next.Permalink }}"> {{ .Next.Title }} </a>
-        {{ end }}
-    </span>
+<aside class="flex">
+
+    {{ if .Next }}
+        <div class="next">
+            <a class="lyrics-title" href="{{ .Next.Permalink }}"><< {{ .Next.Title }} </a>
+        </div>
+    {{ end }}
+
+    {{ if .Prev }}
+        <div class="previous">
+            <a class="lyrics-title" href="{{ .Prev.Permalink }}"> {{ .Prev.Title }} >></a>
+        </div>
+    {{ end }}
+
 </aside>
 
 {{ partial "footer.html" . }}
