@@ -197,11 +197,15 @@ hr{
 
 .lyrics ul li {font-style: italic;}
 
-.headerImage{
-    background:url(../img/SolviaBanner.jpg);
-    height: 700px;
-    width:100%;
-    background-position: center center;
+#headerImage{
+    background:url(../img/SolviaSun.jpg);
+
+     height: 1920px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer{
