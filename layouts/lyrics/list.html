@@ -2,12 +2,10 @@
 {{ partial "navigation.html" . }}
 
 <section class="grid">
-    <div class="player">
-        {{ partial "bandcamp.html"}}
-    </div>
+    {{ partial "bandcamp.html"}}
     <div class="content">
         <div class="layout">
-            <h2>Album list:</h2>
+            <h2 class="lyrics-title">Divinorum:</h2>
             <ol class="lyrics-title">
                 {{ range .Data.Pages.Reverse }}
                 {{ .Render "li"}}

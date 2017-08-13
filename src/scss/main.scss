@@ -101,8 +101,13 @@ h1 {
 }
 
 h2 {
+    font-size: 3.8rem;
+    line-height: 4.2rem;
+
+    @include mappy-bp(med){
     font-size: 4.8rem;
     line-height: 5.2rem;
+    }
 }
 
 h3 {
@@ -157,15 +162,17 @@ nav{
     z-index:100;
     transition: top 0.5s ease-out;
     background-color: rgba(0,0,0,0.7);
-    border: 1px solid rgba(255,255,255,0.15);
+    border-right: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
     display:flex;
     align-items: stretch;
-    a{
+    a,
+    a:visited{
         font-family:$font-cinzel;
         font-size: 2.6rem;
         color:#fff;
         line-height:3rem;
-                padding: 10px 10px 5px;
+        padding: 10px 10px 5px;
     }
     
     img{
@@ -186,11 +193,8 @@ nav{
 
 #homeTitle{
     img{
-        //top:0;
-        //left:0;
         transition: all 0.5s ease-out;
-        filter: brightness(0) invert(1);
-        width:1%;
+        width:50%;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -199,12 +203,9 @@ nav{
         opacity:0;
     }
 
-
-
     &.active img {
-        filter:none;
         max-width:1080px;
-        width:96%;
+        width:95%;
         opacity:1;
     }
 }
@@ -239,9 +240,9 @@ nav{
     @include card;
      
     .layout{
-        padding: 10px;
-            
-        ul, p{padding: 15px 5px;}
+        padding: 10px 10px 15px;
+
+        ul, p{padding: 15px 5px 0;}
         ol{
             padding: 20px 0 5px;
             li a{
@@ -259,12 +260,12 @@ nav{
 #headerImage{
     background:url(../img/SolviaSun.jpg);
 
-     height: 1920px;
-
-    background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
+
+    @include mappy-bp(med){ background-attachment: fixed; }
 }
 
 footer{
@@ -305,6 +306,9 @@ a{
     }
 }
 
+.bio{
+    text-align: center;
+}
     
 svg{
     fill:#000;
