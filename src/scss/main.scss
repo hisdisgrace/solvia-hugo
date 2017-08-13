@@ -40,7 +40,7 @@ $gutter_quater: $gutter * 0.25;
     .content{
         @include span(3.5 of 8 last);
         @include post(0.5 of 8);
-        max-width: initial;
+        //max-width: initial;
     }
 }
 
@@ -149,11 +149,71 @@ hr{
     border-left: none;
 }
 
+
+nav{
+    position: fixed;
+    //width:100%;
+    top: -50px;
+    z-index:100;
+    transition: top 0.5s ease-out;
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.15);
+    display:flex;
+    align-items: stretch;
+    a{
+        font-family:$font-cinzel;
+        font-size: 2.6rem;
+        color:#fff;
+        line-height:3rem;
+                padding: 10px 10px 5px;
+    }
+    
+    img{
+        cursor: pointer;
+        filter: brightness(0) invert(1);
+        width: 100px;
+    }
+
+    &.active{
+        top: 0px;
+    }
+
+     .icons{
+        justify-content: flex-start;
+    }
+}
+
+
+#homeTitle{
+    img{
+        //top:0;
+        //left:0;
+        transition: all 0.5s ease-out;
+        filter: brightness(0) invert(1);
+        width:1%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        opacity:0;
+    }
+
+
+
+    &.active img {
+        filter:none;
+        max-width:1080px;
+        width:96%;
+        opacity:1;
+    }
+}
+
 .content{
     padding: 0 20px;
     margin: 0 20px;
-
-height: 1920px;
+    //height: 1920px;
+        
     @include mappy-bp(large) {
         padding: 0;
         margin: 0;
@@ -171,9 +231,6 @@ height: 1920px;
     display:block;
 }
 
-.grid {}
-
-    
 .song-list{
     @include card;
 }
@@ -183,8 +240,7 @@ height: 1920px;
      
     .layout{
         padding: 10px;
-        height:1920px;
-
+            
         ul, p{padding: 15px 5px;}
         ol{
             padding: 20px 0 5px;
@@ -196,7 +252,6 @@ height: 1920px;
             li:first-child a{border-top: 1px solid rgba(255,255,255,0.15);}
         }
     }
-        
 }
 
 .lyrics ul li {font-style: italic;}
@@ -217,12 +272,17 @@ footer{
     margin-top: 20px;
     padding: 10px 0;
     .icons{
-        max-width:1080px;
-        margin: 0 auto;
-        display:flex;
+     
         justify-content: flex-end;
     }
 }
+
+ .icons{
+        max-width:1080px;
+        margin: 0 auto;
+        display:flex;
+     
+    }
 
 a{
     color:$text-normal;
