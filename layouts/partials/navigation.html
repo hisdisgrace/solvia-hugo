@@ -1,4 +1,4 @@
-<nav class="active">
+<nav {{ if .IsHome }} id="nav"{{ end }} class="active">
     <div class="icons">
         <a class="home" href="{{ .Site.BaseURL }}">
             <img alt="Solvia" src="{{ .Site.BaseURL }}/img/Solvia_noShadow.png"/>

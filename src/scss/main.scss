@@ -10,6 +10,8 @@ $font-arimo: 'Arimo', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700');
 $font-cinzel: 'Cinzel Decorative', cursive;
 
+$player-width: 320px;
+
 $ani-duration: 0.6s;
 $ani-delay: 0.5s;
 $swipe-duration: 0.8s;
@@ -47,8 +49,8 @@ $gutter_quater: $gutter * 0.25;
 
     .content,
     .youtubtContainer{
-        @include span(5 of 12 last);
-        @include post(1 of 12);
+        @include span(5.5 of 12 last);
+        @include post(0.5 of 12);
     }
 }
 
@@ -61,9 +63,9 @@ $gutter_quater: $gutter * 0.25;
         
     .content,
     .youtubtContainer{
-        @include pre(1 of 14);
+        @include pre(0.5 of 14);
         @include span(7 of 14 last);
-        @include post(0 of 14);
+        @include post(0.5 of 14);
     }
 }
     
@@ -189,35 +191,18 @@ nav{
     }
 }
 
-
-#homeTitle{
-    img{
-        transition: all 0.5s ease-out;
-        width:50%;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        opacity:0;
-    }
-
-    &.active img {
-        max-width:1080px;
-        width:95%;
-        opacity:1;
-    }
-}
-
 .grid{
     padding: 0 20px;
     @include mappy-bp(large){ padding: 0; }
 }
 
 .content{ padding: 0 20px; }
-.donation{
+    
+.support{
+    @include card;
     padding: 20px;
-
+    max-width: $player-width;
+    margin: 30px auto 0;
 
     .icons{
         display: flex;
@@ -225,14 +210,14 @@ nav{
     }
 
     p {
-        font-size: 2.4rem;
+        font-size: 1.6rem;
         line-height: 2.8rem;
     }
 
     a{
         font-size: 4.2rem;
         line-height: 4.6rem;
-        min-width:50px;
+        min-width: 50px;
         margin: 0 30px;
     }
 }
@@ -272,10 +257,6 @@ nav{
     @include card;
 }
 
-.donation{
-    @include card;
-}
-
 .content{
     @include card;
      
@@ -295,7 +276,10 @@ nav{
     }
 }
 
-.lyrics ul li {font-style: italic;}
+.lyrics{
+    padding-bottom: 20px;
+    ul li {font-style: italic;}
+}
 
 #headerImage{
     background:url(../img/SolviaSun.jpg);
@@ -306,7 +290,28 @@ nav{
     background-attachment: scroll;
     border-bottom: 5px solid $grey-dark;
 
+    overflow: hidden;
+    position: relative;
+
     @include mappy-bp(med){ background-attachment: fixed; }
+}
+
+#homeTitle{
+    max-width:1080px;
+    position: absolute;
+    transition: width $ani-duration, opacity $ani-duration, top $ani-duration;
+    transform: translate(-50%, -50%);
+    
+    top: 50%;
+    left: 50%;
+    
+    width:30%;    
+    opacity:0;
+
+    &.active{
+        width:100%;
+        opacity:1;
+    }
 }
 
 footer{
@@ -348,7 +353,7 @@ a{
 }
 
 .bio{
-    text-align: center;
+    //text-align: center;
 }
     
 svg{
