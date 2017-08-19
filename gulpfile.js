@@ -11,9 +11,11 @@ var gulp = require('gulp'),
 	notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
 	nodeReset = require('node-reset-scss'),
-    fontAwesome = require('node-font-awesome'),
+    //fontAwesome = require('font-awesome'),
 	order = require('gulp-order'),
 	del = require('del');
+
+var fontDir = './node_modules/font-awesome';
 
 gulp.task('clean', function (cb) {
 	del.sync(['static/**', '!static', 'public/**', '!public']);
@@ -26,7 +28,7 @@ gulp.task('general', function () {
 
 gulp.task('styles', function () {
 	return gulp.src('src/scss/main.scss')
-		   .pipe(sass({includePaths: [nodeReset.includePath, './node_modules/susy/sass', fontAwesome.scssPath, './bourbon']}))
+		   .pipe(sass({includePaths: [nodeReset.includePath, './node_modules/susy/sass', 'node_modules/font-awesome/scss', './bourbon']}))
 		   .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 	       .pipe(gulp.dest('static/css'))
 		   .pipe(rename({suffix: '.min'}))
@@ -56,7 +58,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function() {
-    gulp.src(fontAwesome.fonts)
+    return gulp.src('node_modules/font-awesome/fonts/*')
     .pipe(gulp.dest('static/fonts'));
 });
 
