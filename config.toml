@@ -1,4 +1,4 @@
-baseURL = "https://solvia.co.za"
+baseURL = "https://solvia.co.za/"
 languageCode = "en-za"
 title = "Solvia"
 enableRobotsTXT = true
