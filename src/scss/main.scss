@@ -155,10 +155,8 @@ hr{
     border-left: none;
 }
 
-
 nav{
     position: fixed;
-    //width:100%;
     top: -50px;
     z-index:100;
     transition: top 0.5s ease-out;
@@ -167,6 +165,7 @@ nav{
     border-bottom: 1px solid rgba(255,255,255,0.15);
     display:flex;
     align-items: stretch;
+    
     a,
     a:visited{
         font-family:$font-cinzel;
@@ -328,21 +327,19 @@ footer{
         max-width:1080px;
         margin: 0 auto;
         display:flex;
-     
     }
 
 a{
     color:$text-normal;
-
     text-decoration:none;
-
-    @include mappy-bp(med) {
-        font-size:2.4rem;
-    }
     padding: 10px;
     min-width: 30px;
     display: inline-block;
     text-align: center;
+    
+    @include mappy-bp(med) {
+        font-size:2.4rem;
+    }
 
     &:hover{
         background-color: #222;
@@ -350,10 +347,6 @@ a{
     &:visited{
         color:$text-highlight;
     }
-}
-
-.bio{
-    //text-align: center;
 }
     
 svg{
