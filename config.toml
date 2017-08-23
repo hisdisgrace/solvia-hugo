@@ -1,4 +1,5 @@
-baseURL = "https://hisdisgrace.github.io"
-languageCode = "en-us"
+baseURL = "https://solvia.co.za/"
+languageCode = "en-za"
 title = "Solvia"
+enableRobotsTXT = true
 googleAnalytics = "UA-104961103-1"
