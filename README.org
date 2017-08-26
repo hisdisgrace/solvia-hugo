@@ -1,6 +1,6 @@
 #+TITLE: Source for Solvia... erm... Solvia band website
 
-Can you believe it, William Tempest Bishop is on Github... and so is he's website & website src.
+Can you believe it, William Tempest Bishop is on Github... and so is his website & website src.
 
 Go to [[http://solvia.co.za][solvia.co.za]] for info on the band, the code speaks for itself.
 
