@@ -204,8 +204,6 @@ nav{
     padding: 0 20px;
     @include mappy-bp(large){ padding: 0; }
 }
-
-.content{ padding: 0 20px; }
     
 .support{
     @include card;
@@ -252,11 +250,6 @@ nav{
     height: 100%;
 }
 
-.player,
-.content{
-    margin-top: 30px;
-}
-
 .shows{
     overflow: hidden;
 
@@ -283,10 +276,8 @@ nav{
     }
         
     ul{
-        //margin-bottom:30px;
         font-size: 2.2rem;
         line-height: 2.6rem;
-        //margin-right:15px;
         @include mappy-bp(med){ width:40%; }
         a i { font-size:4.0rem; }
     }
@@ -303,7 +294,10 @@ nav{
 
 .content{
     @include card;
-     
+
+    padding: 0 20px;
+    margin-top: 30px;
+    
     .layout{
         padding: 10px 10px 15px;
 
