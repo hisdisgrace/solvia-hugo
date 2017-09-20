@@ -36,7 +36,7 @@
     
 })( this );
 
- function initMap() {
+function mapReady() {
      var rumours = {lat: -26.132337, lng: 27.974625};
      var map = new google.maps.Map(document.getElementById('map-canvas'), {
          center: rumours,
