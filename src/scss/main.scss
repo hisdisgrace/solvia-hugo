@@ -26,6 +26,11 @@ $gutter_quater: $gutter * 0.25;
     box-sizing: border-box;
 }
 
+@mixin lyrics-list{
+    width:90%;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.15);  
+}
 // Custom Layout for different sections
 
 @include mappy-bp(med) {
@@ -104,11 +109,6 @@ body {
 h1, h2, h3, h4, h5, h6{
   clear: both;
   color:$text-bright;
-}
-
-.lyrics-title{
-    font-weight: 300;
-    font-family:$font-cinzel;
 }
 
 h1, h2 {
@@ -204,7 +204,21 @@ nav{
     padding: 0 20px;
     @include mappy-bp(large){ padding: 0; }
 }
-    
+
+.lyrics-title,
+.mp3-download{
+    font-weight: 300;
+    font-family:$font-cinzel;
+}
+
+.mp3-download a {
+    @include lyrics-list;
+    line-height: 2.6rem;
+}
+.mp3-download.first a {
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
 .support{
     @include card;
     padding: 20px;
@@ -305,11 +319,7 @@ nav{
 
         ol{
             padding: 20px 0 5px;
-            li a{
-                    width:90%;
-                    text-align: left;
-                    border-bottom: 1px solid rgba(255,255,255,0.15);  
-                }
+            li a{ @include lyrics-list; }
             li:first-child a{border-top: 1px solid rgba(255,255,255,0.15);}
         }
     }
