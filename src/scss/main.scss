@@ -27,12 +27,13 @@ $gutter_quater: $gutter * 0.25;
 }
 
 @mixin lyrics-list{
+    line-height: 2.6rem;
     width:90%;
     text-align: left;
     border-bottom: 1px solid rgba(255,255,255,0.15);  
 }
+    
 // Custom Layout for different sections
-
 @include mappy-bp(med) {
     .player,
     .youtubtContainer{
@@ -213,7 +214,6 @@ nav{
 
 .mp3-download a {
     @include lyrics-list;
-    line-height: 2.6rem;
 }
 .mp3-download.first a {
     border-top: 1px solid rgba(255,255,255,0.15);
