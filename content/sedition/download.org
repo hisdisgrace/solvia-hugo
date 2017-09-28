@@ -4,47 +4,47 @@
 #+DRAFT: false
 
 <div class="mp3-download first">
-  <a href="https://solvia.co.za/mp3/Solvia-Divinorum.zip" download>
+  <a href="https://solvia.co.za/mp3/Solvia-Divinorum.zip" download="Solvia-Divinorum.zip">
     Solvia Divinorum - Full album
   </a>
 </div>
 <div class="mp3-download">
-  <a href="https://solvia.co.za/mp3/01_MyOnlyPrayer.mp3" download>
+  <a href="https://solvia.co.za/mp3/MyOnlyPrayer.mp3" download="MyOnlyPrayer.mp3">
     My only prayer
   </a>
 </div>
 <div class="mp3-download">
-  <a href="https://solvia.co.za/mp3/02_Judas.mp3" download>
+  <a href="https://solvia.co.za/mp3/Judas.mp3" download="Judas.mp3">
     Judas
   </a>
 </div>
 <div class="mp3-download">
-  <a href="https://solvia.co.za/mp3/03_NixonsNightmare.mp3" download>
+  <a href="https://solvia.co.za/mp3/NixonsNightmare.mp3" download="NixonsNightmare.mp3">
     Nixon's nightmare
   </a>
 </div>
 <div class="mp3-download">
-  <a href="https://solvia.co.za/mp3/04_BilderbergHustle.mp3" download>
+  <a href="https://solvia.co.za/mp3/BilderbergHustle.mp3" download="BilderbergHustle.mp3">
     Bilderberg hustle
   </a>
 </div>
 <div class="mp3-download">
-  <a href="https://solvia.co.za/mp3/05_DeusInfinitus.mp3" download>
+  <a href="https://solvia.co.za/mp3/DeusInfinitus.mp3" download="DeusInfinitus.mp3">
     Deus infinitus
   </a>
 </div>
 <div class="mp3-download">
-  <a href="https://solvia.co.za/mp3/06_GreenEyes.mp3" download>
+  <a href="https://solvia.co.za/mp3/GreenEyes.mp3" download="GreenEyes.mp3">
     Green eyes
   </a>
 </div>
 <div class="mp3-download">
-  <a href="https://solvia.co.za/mp3/07_Sedition.mp3" download>
+  <a href="https://solvia.co.za/mp3/Sedition.mp3" download="Sedition.mp3">
     Sedition
   </a>
 </div>
 <div class="mp3-download">
-  <a href="https://solvia.co.za/mp3/08_FleshBone.mp3" download>
+  <a href="https://solvia.co.za/mp3/FleshBone.mp3" download="FleshBone.mp3">
     Flesh & bone
   </a>
 </div>
