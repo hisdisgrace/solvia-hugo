@@ -1,0 +1,23 @@
+#+TITLE: Play it loud
+#+DATE: 2017-08-09T11:07:57+02:00
+#+URL: "/sedition/"
+#+DRAFT: false
+
+The music is what matters. With your support, I can make more but until then.
+
+-----
+
+<div class="lyrics-title">[[https://solvia.co.za/mp3/01_MyOnlyPrayer.mp3][My only prayer]]</div>
+<div class="lyrics-title">[[https://solvia.co.za/mp3/02_Judas.mp3][Judas]]</div>
+<div class="lyrics-title">[[https://solvia.co.za/mp3/03_NixonsNightmare.mp3][Nixon's nightmare]]</div>
+<div class="lyrics-title">[[https://solvia.co.za/mp3/04_BilderbergHustle.mp3][Bilderberg hustle]]</div>
+<div class="lyrics-title">[[https://solvia.co.za/mp3/05_DeusInfinitus.mp3][Deus infinitus]]</div>
+<div class="lyrics-title">[[https://solvia.co.za/mp3/06_GreenEyes.mp3][Green eyes]]</div>
+<div class="lyrics-title">[[https://solvia.co.za/mp3/07_Sedition.mp3][Sedition]]</div>
+<div class="lyrics-title">[[https://solvia.co.za/mp3/08_FleshBone.mp3][Flesh & bone]]</div>
+
+-----
+
+<div class="lyrics-title">[[https://solvia.co.za/mp3/Solvia-Divinorum.zip][Full album]]</div>
+
+-----

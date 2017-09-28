@@ -1,0 +1,15 @@
+{{ partial "head.html" . }}
+{{ partial "navigation.html" . }}
+<section class="grid">
+
+    {{ partial "bandcamp.html"}}
+
+    <div class="content lyrics">
+        <div class="layout">
+            <h1 class="lyrics-title">{{ .Title }}</h1>
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
