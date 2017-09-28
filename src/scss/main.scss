@@ -212,11 +212,14 @@ nav{
     font-family:$font-cinzel;
 }
 
-.mp3-download a {
-    @include lyrics-list;
-}
-.mp3-download.first a {
-    border-top: 1px solid rgba(255,255,255,0.15);
+.mp3-download {
+    a {
+        @include lyrics-list;
+    }
+
+    &.first a {
+        border-top: 1px solid rgba(255,255,255,0.15);
+    }
 }
 
 .support{
@@ -413,5 +416,5 @@ svg{
         background-color:$background;
     }
             
-    .next{ margin-right:15px; }
+    .previous{ margin-right:15px; }ly
 }

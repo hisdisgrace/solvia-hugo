@@ -1,9 +1,10 @@
 #+TITLE: Free album download
-#+DATE: 2017-08-09T11:07:57+02:00
+#+DATE: 2017-09-29T11:07:57+02:00
 #+URL: "/sedition/"
 #+DRAFT: false
 
-<div class="mp3-download first">[[https://solvia.co.za/mp3/01_MyOnlyPrayer.mp3][My only prayer]]</div>
+<div class="mp3-download first">[[https://solvia.co.za/mp3/Solvia-Divinorum.zip][Solvia Divinorum - Full album]]</div>
+<div class="mp3-download">[[https://solvia.co.za/mp3/01_MyOnlyPrayer.mp3][My only prayer]]</div>
 <div class="mp3-download">[[https://solvia.co.za/mp3/02_Judas.mp3][Judas]]</div>
 <div class="mp3-download">[[https://solvia.co.za/mp3/03_NixonsNightmare.mp3][Nixon's nightmare]]</div>
 <div class="mp3-download">[[https://solvia.co.za/mp3/04_BilderbergHustle.mp3][Bilderberg hustle]]</div>
@@ -11,4 +12,4 @@
 <div class="mp3-download">[[https://solvia.co.za/mp3/06_GreenEyes.mp3][Green eyes]]</div>
 <div class="mp3-download">[[https://solvia.co.za/mp3/07_Sedition.mp3][Sedition]]</div>
 <div class="mp3-download">[[https://solvia.co.za/mp3/08_FleshBone.mp3][Flesh & bone]]</div>
-<div class="mp3-download">[[https://solvia.co.za/mp3/Solvia-Divinorum.zip][Solvia Divinorum - Full album]]</div>
+

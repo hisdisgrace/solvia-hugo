@@ -15,18 +15,18 @@
     
 <aside class="flex">
 
-    {{ if .Next }}
-        <div class="next">
-            <a class="lyrics-title" href="{{ .Next.Permalink }}"><< {{ .Next.Title }} </a>
-        </div>
-    {{ end }}
-
-    {{ if .Prev }}
+    {{ if .PrevInSection }}
         <div class="previous">
-            <a class="lyrics-title" href="{{ .Prev.Permalink }}"> {{ .Prev.Title }} >></a>
+            <a class="lyrics-title" href="{{ .PrevInSection.Permalink }}"><< {{ .PrevInSection.Title }} </a>
         </div>
     {{ end }}
 
+    {{ if .NextInSection }}
+        <div class="next">
+            <a class="lyrics-title" href="{{ .NextInSection.Permalink }}"> {{ .NextInSection.Title }} >></a>
+        </div>
+    {{ end }}
+        
 </aside>
 
 {{ partial "footer.html" . }}
